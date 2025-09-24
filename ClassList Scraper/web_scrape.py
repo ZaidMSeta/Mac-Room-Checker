@@ -19,6 +19,12 @@ HEADLESS = True    # set True once it's steady
 
 LOGS = Path("logs"); LOGS.mkdir(exist_ok=True)
 
+# top of file (constants)
+UI_TIMEOUT = 3_000          # generic short wait for UI state
+SLOW_TIMEOUT = 6_000        # only for truly slow bits
+TYPE_DELAY = 40             # ms per keystroke
+
+
 def safe_remove(p: str):
     try: os.remove(p)
     except FileNotFoundError: pass
