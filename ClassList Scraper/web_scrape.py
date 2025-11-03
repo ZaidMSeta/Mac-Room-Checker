@@ -15,7 +15,7 @@ CATALOG_URL = "https://academiccalendars.romcmaster.ca/content.php?catoid=58&nav
 START_PAGE = 2
 END_PAGE = None     # set to int if auto-detect fails (e.g., 31)
 OUTPUT_FILE = "course_names.csv"
-HEADLESS = True    # set True once it's steady
+HEADLESS = False    # set True once it's steady
 
 LOGS = Path("logs"); LOGS.mkdir(exist_ok=True)
 
